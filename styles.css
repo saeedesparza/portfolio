@@ -1,0 +1,294 @@
+:root {
+  --paper: #f3e8d2;
+  --paper-raised: #ece0c4;
+  --ink: #2a241c;
+  --ink-soft: #5a4f3f;
+  --forest: #2f4a3c;
+  --forest-deep: #203329;
+  --rust: #b5502c;
+  --line: #c7b593;
+  --line-soft: #d9cba6;
+  --cream-card: #fbf4e4;
+
+  --display: "Fraunces", "Source Serif 4", serif;
+  --body: "Source Serif 4", Georgia, serif;
+  --mono: "JetBrains Mono", "SF Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  position: relative;
+  min-height: 100%;
+}
+
+.contour-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--paper);
+  background-image:
+    repeating-radial-gradient(circle at 15% 20%, transparent 0, transparent 38px, var(--line-soft) 39px, transparent 40px, transparent 78px),
+    repeating-radial-gradient(circle at 85% 70%, transparent 0, transparent 46px, var(--line-soft) 47px, transparent 48px, transparent 94px),
+    repeating-radial-gradient(circle at 50% 95%, transparent 0, transparent 30px, var(--line-soft) 31px, transparent 32px, transparent 62px);
+  opacity: 0.55;
+}
+
+a { color: var(--forest); text-decoration-color: var(--rust); }
+a:hover { color: var(--rust); }
+
+/* ---------- Masthead ---------- */
+
+.masthead {
+  padding: 4.5rem 1.5rem 3rem;
+  text-align: center;
+  border-bottom: 1px dashed var(--line);
+}
+
+.masthead-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.trail-tag {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--forest);
+  text-transform: uppercase;
+  margin: 0 0 0.9rem;
+}
+
+.name {
+  font-family: var(--display);
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-size: clamp(2.6rem, 7vw, 4.4rem);
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--ink);
+}
+
+.role {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 0.6rem 0 2.2rem;
+}
+
+.intro-card {
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1.8rem 2rem 1.5rem;
+  text-align: left;
+  position: relative;
+  box-shadow: 4px 6px 0 rgba(42, 36, 28, 0.06);
+  transform: rotate(-0.3deg);
+}
+
+.intro-text {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin: 0;
+  color: var(--ink);
+}
+
+.intro-sign {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.1rem;
+  text-align: right;
+  margin: 0.8rem 0 0;
+  color: var(--forest);
+}
+
+/* ---------- Trail of cards ---------- */
+
+.trail {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 2rem;
+}
+
+.trail-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: repeating-linear-gradient(to bottom, var(--line) 0, var(--line) 6px, transparent 6px, transparent 14px);
+  transform: translateX(-50%);
+}
+
+.card {
+  position: relative;
+  margin: 0 0 3.2rem;
+  display: flex;
+  gap: 1.4rem;
+  animation: rise 0.6s ease backwards;
+}
+
+.card:nth-of-type(1) { animation-delay: 0.02s; }
+.card:nth-of-type(2) { animation-delay: 0.08s; }
+.card:nth-of-type(3) { animation-delay: 0.14s; }
+.card:nth-of-type(4) { animation-delay: 0.2s; }
+.card:nth-of-type(5) { animation-delay: 0.26s; }
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card-marker {
+  flex: 0 0 auto;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: var(--forest);
+  color: var(--cream-card);
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3rem;
+  box-shadow: 0 0 0 4px var(--paper), 0 0 0 5px var(--line);
+  z-index: 2;
+}
+
+.card--planned .card-marker {
+  background: var(--paper-raised);
+  color: var(--ink-soft);
+  box-shadow: 0 0 0 4px var(--paper), 0 0 0 5px var(--line);
+}
+
+.card-body {
+  flex: 1 1 auto;
+  background: var(--cream-card);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1.6rem 1.8rem;
+  position: relative;
+  box-shadow: 3px 5px 0 rgba(42, 36, 28, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:nth-of-type(even) .card-body { transform: rotate(0.4deg); }
+.card:nth-of-type(odd) .card-body { transform: rotate(-0.4deg); }
+
+.card-body:hover {
+  transform: translateY(-3px) rotate(0deg);
+  box-shadow: 6px 10px 0 rgba(42, 36, 28, 0.08);
+}
+
+.card--planned .card-body {
+  background: repeating-linear-gradient(135deg, var(--paper-raised), var(--paper-raised) 10px, var(--cream-card) 10px, var(--cream-card) 20px);
+  opacity: 0.92;
+}
+
+.stamp {
+  position: absolute;
+  top: -0.7rem;
+  right: 1.2rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  border-radius: 2px;
+  transform: rotate(4deg);
+}
+
+.stamp--live {
+  background: var(--forest);
+  color: var(--cream-card);
+}
+
+.stamp--planned {
+  background: transparent;
+  border: 1.5px solid var(--rust);
+  color: var(--rust);
+  transform: rotate(-3deg);
+}
+
+.card-title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin: 0.4rem 0 0.3rem;
+  color: var(--ink);
+}
+
+.card-meta {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.9rem;
+}
+
+.card-meta strong { color: var(--forest); }
+
+.card-text {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+
+.card-links {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 0.9rem;
+}
+
+.card-link {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.reflection {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  border-top: 1px dashed var(--line);
+  padding-top: 0.8rem;
+  margin: 0;
+}
+
+.reflection-label {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--rust);
+  margin-right: 0.4rem;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.footer a {
+  color: var(--forest);
+}
+
+@media (max-width: 560px) {
+  .trail-line { display: none; }
+  .card { flex-direction: column; }
+  .card-marker { margin-top: 0; }
+}
