@@ -55,17 +55,23 @@
     </div>
   </section>
 
-  <section class="card card--planned" id="artifact-2">
+  <section class="card card--live" id="artifact-2">
     <div class="card-marker">02</div>
     <div class="card-body">
-      <span class="stamp stamp--planned">COMING&nbsp;SOON</span>
-      <h2 class="card-title">Artifact 2 &mdash; Idea: Trailhead Gym Log</h2>
-      <p class="card-meta">status: <strong>planned</strong> &middot; link: TBD</p>
+      <span class="stamp stamp--live">ON&nbsp;TRAIL</span>
+      <h2 class="card-title">Artifact 2 &mdash; Trailhead Gym Log</h2>
+      <p class="card-meta">status: <strong>live</strong> &middot; built with: HTML / CSS / JS / Claude Code</p>
       <p class="card-text">
-        A lightweight workout tracker that logs lifts and progression without the bloat of a
-        full gym app &mdash; a small full-stack-flavored build to pressure-test an AI coding
-        tool on something I'd actually use at the gym.
+        A no-bloat workout tracker I use on my phone at the gym. Log sets in a tap or two (inputs
+        prefill from last time), see what I lifted last session, get a PR badge when I beat my best,
+        and track estimated 1RM per lift. No accounts, no backend &mdash; just localStorage and a JSON backup.
       </p>
+      <div class="card-links">
+        <a href="https://saeedesparza.github.io/trailhead-gym-log/" class="card-link">use it &rarr;</a>
+        <a href="https://github.com/saeedesparza/trailhead-gym-log" class="card-link">repo &rarr;</a>
+        <a href="https://github.com/saeedesparza/trailhead-gym-log/blob/main/LOG.md" class="card-link">log &rarr;</a>
+      </div>
+      <p class="reflection"><span class="reflection-label">reflection:</span> Writing CLAUDE.md and the plan before any code made the agent stay small and on-task. The bigger lesson was verifying instead of trusting: having it test the real page caught a bug where corrupted saved data would have silently wiped my whole history &mdash; something I'd never have spotted by reading the code.</p>
     </div>
   </section>
 

@@ -24,3 +24,11 @@ Running log of AI interactions and the modifications made while building this si
 **Reflection:**
 - The actual work was less about writing code and more about being specific with Claude about who I am and what the site should feel like — generic prompts would've gotten a generic result.
 - Next step: replace placeholder ideas for Artifacts 2–5 with real projects as they're built throughout the quarter, and log each change here.
+
+## 2026-10-18 — Artifact 2
+
+**Tool used:** Claude Code CLI
+
+**Interaction:** Shared the Artifact 2 spec ("Something You Will Use") and told Claude to do whatever was needed. Claude built the Trailhead Gym Log idea from card 02 in its own repo: [saeedesparza/trailhead-gym-log](https://github.com/saeedesparza/trailhead-gym-log). That repo's `LOG.md` has the full plan and change log.
+
+**Changes here:** Card 02 went from "planned" to "live", with links to the app, repo, and log, plus a reflection.
