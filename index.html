@@ -75,17 +75,25 @@
     </div>
   </section>
 
-  <section class="card card--planned" id="artifact-3">
+  <section class="card card--live" id="artifact-3">
     <div class="card-marker">03</div>
     <div class="card-body">
-      <span class="stamp stamp--planned">COMING&nbsp;SOON</span>
-      <h2 class="card-title">Artifact 3 &mdash; Idea: Riff Sketchpad</h2>
-      <p class="card-meta">status: <strong>planned</strong> &middot; link: TBD</p>
+      <span class="stamp stamp--live">ON&nbsp;TRAIL</span>
+      <h2 class="card-title">Artifact 3 &mdash; Trailhead Coach</h2>
+      <p class="card-meta">status: <strong>live</strong> &middot; built with: Node / claude -p / Claude Code</p>
       <p class="card-text">
-        A browser tool for capturing quick music ideas &mdash; chord loops, tempo sketches,
-        voice-memo style riffs &mdash; before they're forgotten. An excuse to see how far an
-        AI tool can go on audio-adjacent UI.
+        A weekly coach for my gym log. I export my workouts, and a script works out every number
+        (volume, top sets, est. 1RM, PRs, stalled lifts, a safe weight ceiling). Then Claude, running
+        headless, reads those numbers plus my workout notes and writes a short review with a target
+        for each lift next session. Before anything is saved, plain code checks the reply: no invented
+        lifts, no target over the ceiling, and no number that isn&rsquo;t in my data.
       </p>
+      <div class="card-links">
+        <a href="https://github.com/saeedesparza/trailhead-gym-log/tree/main/coach" class="card-link">code &rarr;</a>
+        <a href="https://github.com/saeedesparza/trailhead-gym-log/blob/main/coach/sample-review.md" class="card-link">sample review &rarr;</a>
+        <a href="https://github.com/saeedesparza/trailhead-gym-log/blob/main/LOG.md" class="card-link">log &rarr;</a>
+      </div>
+      <p class="reflection"><span class="reflection-label">reflection:</span> The big decision was what not to let the model do. Code handles all the math and limits and the model only gets the judgment calls, like holding my overhead press because I wrote that my shoulder was sore. Keeping the job small meant that when something broke, the exit code told me whether my code or the model was at fault.</p>
     </div>
   </section>
 

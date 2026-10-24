@@ -32,3 +32,11 @@ Running log of AI interactions and the modifications made while building this si
 **Interaction:** Shared the Artifact 2 spec ("Something You Will Use") and told Claude to do whatever was needed. Claude built the Trailhead Gym Log idea from card 02 in its own repo: [saeedesparza/trailhead-gym-log](https://github.com/saeedesparza/trailhead-gym-log). That repo's `LOG.md` has the full plan and change log.
 
 **Changes here:** Card 02 went from "planned" to "live", with links to the app, repo, and log, plus a reflection.
+
+## 2026-10-24 — Artifact 3
+
+**Tool used:** Claude Code CLI
+
+**Interaction:** Shared the Artifact 3 spec ("AI Inside It"). Chose to extend the gym log with a weekly coach that runs Claude Code headless (`claude -p`), so it costs nothing beyond my plan. It's built in the gym-log repo under [`coach/`](https://github.com/saeedesparza/trailhead-gym-log/tree/main/coach). That repo's `LOG.md` has the plan, the changes, and the verification.
+
+**Changes here:** Card 03 swapped the Riff Sketchpad placeholder for Trailhead Coach (live), with links to the code, a sample review, and the log.
