@@ -45,6 +45,6 @@ Running log of AI interactions and the modifications made while building this si
 
 **Tool used:** Claude Code CLI
 
-**Interaction:** Shared the Artifact 4 spec ("For Someone Else"). Teamed up with Vaughn DeTray. We're building a trail finder for UW Tacoma students, which grew out of my old Trail Finder idea. Claude drafted the team repo docs: `PLAN.md` (what we're building, who owns what, branch/PR/merge rules), `LOG.md` (shared log), and a shared `CLAUDE.md` so both of our agents follow the same plan.
+**Interaction:** Shared the Artifact 4 spec ("For Someone Else"). Teamed up with Vaughn DeTray. We're building a trail finder for UW Tacoma students, which grew out of my old Trail Finder idea. Claude drafted the team repo docs in [saeedesparza/uwt-trail-finder](https://github.com/saeedesparza/uwt-trail-finder): `PLAN.md` (what we're building, who owns what, branch/PR/merge rules), `LOG.md` (shared log), and a shared `CLAUDE.md` so both of our agents follow the same plan.
 
-**Changes here:** Card 04 went from "Idea: Trail Finder · planned" to "UWT Trail Finder · in progress", with the team, the audience, and a progress note for the Nov 1 checkpoint. Added an "in progress" stamp style.
+**Changes here:** Card 04 went from "Idea: Trail Finder · planned" to "UWT Trail Finder · in progress", with the team, the audience, a progress note for the Nov 1 checkpoint, and links to the repo, plan, and log. Added an "in progress" stamp style.
