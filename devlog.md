@@ -40,3 +40,11 @@ Running log of AI interactions and the modifications made while building this si
 **Interaction:** Shared the Artifact 3 spec ("AI Inside It"). Chose to extend the gym log with a weekly coach that runs Claude Code headless (`claude -p`), so it costs nothing beyond my plan. It's built in the gym-log repo under [`coach/`](https://github.com/saeedesparza/trailhead-gym-log/tree/main/coach). That repo's `LOG.md` has the plan, the changes, and the verification.
 
 **Changes here:** Card 03 swapped the Riff Sketchpad placeholder for Trailhead Coach (live), with links to the code, a sample review, and the log.
+
+## 2026-11-01 — Artifact 4 (checkpoint)
+
+**Tool used:** Claude Code CLI
+
+**Interaction:** Shared the Artifact 4 spec ("For Someone Else"). Teamed up with Vaughn DeTray. We're building a trail finder for UW Tacoma students, which grew out of my old Trail Finder idea. Claude drafted the team repo docs: `PLAN.md` (what we're building, who owns what, branch/PR/merge rules), `LOG.md` (shared log), and a shared `CLAUDE.md` so both of our agents follow the same plan.
+
+**Changes here:** Card 04 went from "Idea: Trail Finder · planned" to "UWT Trail Finder · in progress", with the team, the audience, and a progress note for the Nov 1 checkpoint. Added an "in progress" stamp style.

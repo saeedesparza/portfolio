@@ -219,6 +219,17 @@ a:hover { color: var(--rust); }
   transform: rotate(-3deg);
 }
 
+.card--progress .card-marker {
+  background: var(--rust);
+  color: var(--cream-card);
+}
+
+.stamp--progress {
+  background: var(--rust);
+  color: var(--cream-card);
+  transform: rotate(-2deg);
+}
+
 .card-title {
   font-family: var(--display);
   font-weight: 600;
