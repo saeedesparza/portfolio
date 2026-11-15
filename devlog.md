@@ -48,3 +48,11 @@ Running log of AI interactions and the modifications made while building this si
 **Interaction:** Shared the Artifact 4 spec ("For Someone Else"). Teamed up with Vaughn DeTray. We're building a trail finder for UW Tacoma students, which grew out of my old Trail Finder idea. Claude drafted the team repo docs in [saeedesparza/uwt-trail-finder](https://github.com/saeedesparza/uwt-trail-finder): `PLAN.md` (what we're building, who owns what, branch/PR/merge rules), `LOG.md` (shared log), and a shared `CLAUDE.md` so both of our agents follow the same plan.
 
 **Changes here:** Card 04 went from "Idea: Trail Finder · planned" to "UWT Trail Finder · in progress", with the team, the audience, a progress note for the Nov 1 checkpoint, and links to the repo, plan, and log. Added an "in progress" stamp style.
+
+## 2026-11-15 — Artifact 5 (Week 6 checkpoint)
+
+**Tool used:** Claude Code CLI
+
+**Interaction:** Shared the Artifact 5 spec ("The Moonshot"). Chose to go solo and grow the Trailhead Gym Log and Coach into a full-stack app: accounts, offline-first sync, the coach in the app, and gym friends. Claude scaffolded a new repo, [saeedesparza/trailhead](https://github.com/saeedesparza/trailhead), with `PLAN.md` (milestones split into single-session tasks), `CLAUDE.md`, `LOG.md`, a Vite + TypeScript skeleton with tests, a Supabase schema, and a Pages deploy workflow.
+
+**Changes here:** Card 05 swapped the "AI Pair-Programming Retro" placeholder for Trailhead (in progress), with a Week 6 progress note and links to the repo, plan, and log.
